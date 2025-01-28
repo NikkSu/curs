@@ -20,6 +20,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.function.BiConsumer;
 
+import static com.fx.curs.DatabaseConfig.*;
+
 public class AccountsContr {
     @FXML
     private TableColumn<User, Boolean> isEmployeeColumn;
@@ -41,9 +43,7 @@ public class AccountsContr {
     @FXML
     private TableColumn<User, String> emailColumn;
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
+
 
     @FXML
     public void initialize() {

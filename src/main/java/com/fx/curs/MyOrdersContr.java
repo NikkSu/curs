@@ -12,7 +12,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.util.Duration;
-
+import static com.fx.curs.DatabaseConfig.*;
 import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
@@ -20,9 +20,6 @@ import java.time.format.DateTimeFormatter;
 
 public class MyOrdersContr {
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
 
     @FXML
     private TableView<OrderSummary> ordersTableView;

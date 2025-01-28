@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
+import static com.fx.curs.DatabaseConfig.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -32,9 +32,6 @@ public class MyAccContr {
     @FXML
     private Button changePassButton;
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
 
     @FXML
     public void initialize() {

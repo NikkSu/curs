@@ -6,7 +6,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
+import static com.fx.curs.DatabaseConfig.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -33,9 +33,6 @@ public class RegistrContr {
     @FXML
     private Label wrongLogIn;
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
 
     public void usereg(ActionEvent actionEvent) throws IOException {
         String user = username.getText();

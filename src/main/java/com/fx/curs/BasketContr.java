@@ -8,12 +8,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
 import java.sql.*;
-
+import static com.fx.curs.DatabaseConfig.*;
 public class BasketContr {
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
 
     @FXML
     private TableView<CartItem> tableView;

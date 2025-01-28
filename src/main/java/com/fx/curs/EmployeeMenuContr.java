@@ -19,9 +19,6 @@ public class EmployeeMenuContr {
     @FXML
     private Button EmployeeButton;
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
 
 
 

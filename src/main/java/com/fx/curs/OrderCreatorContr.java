@@ -15,12 +15,10 @@ import javafx.animation.Timeline;
 import javafx.util.Duration;
 import java.io.IOException;
 import java.sql.*;
-
+import static com.fx.curs.DatabaseConfig.*;
 public class OrderCreatorContr {
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
+
 
     @FXML
     private TextField number;
@@ -160,7 +158,7 @@ public class OrderCreatorContr {
                 }
             }
 
-            // Проверяем, добавлен ли товар в текущий заказ
+
             String checkItemQuery = "SELECT quantity FROM order_items WHERE order_id = ? AND item_id = ?";
             try (PreparedStatement checkItemStatement = connection.prepareStatement(checkItemQuery)) {
                 checkItemStatement.setInt(1, orderId);
@@ -170,7 +168,7 @@ public class OrderCreatorContr {
                 if (resultSet.next()) {
                     int existingQuantity = resultSet.getInt("quantity");
 
-                    // Обновляем количество товара
+
                     String updateQuantityQuery = "UPDATE order_items SET quantity = ? WHERE order_id = ? AND item_id = ?";
                     try (PreparedStatement updateQuantityStatement = connection.prepareStatement(updateQuantityQuery)) {
                         updateQuantityStatement.setInt(1, existingQuantity + Integer.parseInt(number.getText()));
@@ -179,7 +177,7 @@ public class OrderCreatorContr {
                         updateQuantityStatement.executeUpdate();
                     }
                 } else {
-                    // Добавляем новый товар в заказ
+
                     String addToOrderQuery = "INSERT INTO order_items (order_id, item_id, quantity) VALUES (?, ?, ?)";
                     try (PreparedStatement addToOrderStatement = connection.prepareStatement(addToOrderQuery)) {
                         addToOrderStatement.setInt(1, orderId);

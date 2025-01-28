@@ -1,6 +1,6 @@
 package com.fx.curs;
 
-
+import static com.fx.curs.DatabaseConfig.*;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
@@ -21,9 +21,6 @@ import java.time.format.DateTimeFormatter;
 
 public class AdminOrdersContr {
 
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
 
     @FXML
     private TableView<OrderSummary> ordersTableView;

@@ -7,7 +7,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.converter.DoubleStringConverter;
 import javafx.util.converter.IntegerStringConverter;
-
+import static com.fx.curs.DatabaseConfig.*;
 import java.io.IOException;
 import java.sql.*;
 
@@ -69,9 +69,7 @@ public class RedactorContr {
 
     @FXML
     private TableColumn<Item, String> placeColumn;
-    private final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private final String DB_USER = "root";
-    private final String DB_PASSWORD = "1903";
+
 
     @FXML
     private void UserLogOut(ActionEvent actionEvent) throws IOException {

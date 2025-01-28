@@ -6,7 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-
+import static com.fx.curs.DatabaseConfig.*;
 import java.io.IOException;
 import java.sql.*;
 
@@ -30,9 +30,7 @@ public class EmployeeOrderContr {
     @FXML
     private Label alert;
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/my_database";
-    private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "1903";
+
 
     @FXML
     public void initialize() {

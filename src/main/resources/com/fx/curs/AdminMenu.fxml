@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #001a27;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.curs.AdminMenuContr">
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="496.0" layoutY="276.0" mnemonicParsing="false" onAction="#UserLogOut" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #4a778a;" text="назад" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="5.0" />
+                <ImageView fitHeight="75.0" fitWidth="67.0" layoutX="534.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="110.01124877929692" AnchorPane.leftAnchor="534.0" AnchorPane.topAnchor="332.0">
+                    <image>
+                        <Image url="@../../../imges/прикол4.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="71.0" fitWidth="92.0" layoutX="14.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="509.55420074462893">
+                    <image>
+                        <Image url="@../../../imges/прикол2.png" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="151.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imges/логокурсач.png" />
+               </image>
+            </ImageView>
+                <Button mnemonicParsing="false" onAction="#GoToAdminOrders" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="заказы " textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+
+                <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#GoToCatalog" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="каталог" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="10.0" />
+                <Button layoutX="5.0" layoutY="54.0" mnemonicParsing="false" onAction="#GoToRedactor" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="редактор каталога" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="54.0" />
+                <Button layoutX="509.0" layoutY="54.0" mnemonicParsing="false" onAction="#GoToOrders" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="заказать " textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="54.0" />
+                <Button layoutX="509.0" layoutY="10.0" mnemonicParsing="false" onAction="#GoToAccounts" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="аккаунты" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

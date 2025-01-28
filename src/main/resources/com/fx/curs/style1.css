@@ -1,0 +1,38 @@
+/* Изменение фона таблицы */
+.table-view {
+    -fx-background-color:   #4a778a; /* Здесь укажите нужный цвет */
+    -fx-border-color: transparent;
+}
+
+/* Цвет строк таблицы */
+.table-row-cell:odd {
+    -fx-background-color: #001a27; /* Цвет для нечетных строк */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #042332; /* Цвет для четных строк */
+}
+
+/* Цвет текста */
+.table-cell {
+    -fx-text-fill: white; /* Цвет текста в ячейках */
+}
+
+/* Цвет выделенной строки */
+.table-row-cell:selected {
+    -fx-background-color: #7a9cff; /* Цвет для выделенной строки */
+}
+
+.table-cell:selected {
+    -fx-background-color: green;
+    -fx-text-fill: white; /* Цвет текста в выделенной ячейке */
+}
+
+/* Цвет заголовков */
+.column-header-background {
+    -fx-background-color: black;
+}
+
+.table-column-header {
+    -fx-text-fill: white; /* Цвет текста заголовков */
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #001a27;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.curs.EmployeeOrderContr">
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER">
+            <children>
+
+                <Button layoutX="499.0" layoutY="480.0" mnemonicParsing="false" onAction="#GoToAdminMenu" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #4a778a;" text="назад" textFill="WHITE" AnchorPane.bottomAnchor="10.399999999999977" AnchorPane.rightAnchor="12.200000000000045" />
+                <ImageView fitHeight="75.0" fitWidth="67.0" layoutX="432.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.411248779296898" AnchorPane.leftAnchor="432.0" AnchorPane.topAnchor="427.0">
+                    <image>
+                        <Image url="@../../../imges/прикол4.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="71.0" fitWidth="92.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="522.7542007446289">
+                    <image>
+                        <Image url="@../../../imges/прикол2.png" />
+                    </image>
+
+                </ImageView>
+                <TableView fx:id="tableView" layoutX="21.0" layoutY="-6.0" prefHeight="396.0" prefWidth="560.0" stylesheets="@style1.css">
+                    <columns>
+                        <TableColumn fx:id="orderIdColumn" prefWidth="80.0" text="ID заказа" />
+                        <TableColumn fx:id="userIdColumn" prefWidth="106.0" text="ID пользователя" />
+                        <TableColumn fx:id="productNameColumn" prefWidth="143.79998779296875" text="Название" />
+                        <TableColumn fx:id="productLocationColumn" prefWidth="117.0" text="Местонахождение" />
+                        <TableColumn fx:id="quantityColumn" prefWidth="102.199951171875" text="Количество" />
+                    </columns>
+                </TableView>
+                <Button fx:id="collectButton" layoutX="39.0" layoutY="464.0" mnemonicParsing="false" onAction="#collect" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: fea580;" text="Собрать" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="12.0" />
+            <TextField fx:id="orderIdField" layoutX="38.0" layoutY="427.0" prefHeight="26.0" prefWidth="99.0" promptText="id" />
+            <Label fx:id="alert" alignment="CENTER" layoutX="205.0" layoutY="431.0" prefHeight="46.0" prefWidth="226.0" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="70.0" prefWidth="595.0" BorderPane.alignment="CENTER">
+         <children>
+             <Button layoutX="236.0" layoutY="18.0" mnemonicParsing="false" onAction="#GoToDelivery" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="принять доставку" textFill="WHITE" AnchorPane.topAnchor="15.0" />
+             <Button layoutX="317.0" layoutY="49.0" mnemonicParsing="false" onAction="#GoToEmployeeCatalog" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="каталог" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0" />
+                <Button layoutX="458.0" layoutY="16.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: fea580;" text="заказы" textFill="WHITE" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="14.0" />
+         </children></AnchorPane>
+    </top>
+</BorderPane>

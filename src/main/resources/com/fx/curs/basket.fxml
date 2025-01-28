@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #001a27;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.curs.BasketContr">
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="499.0" layoutY="480.0" mnemonicParsing="false" onAction="#GoToAdminMenu" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #4a778a;" text="назад" textFill="WHITE" AnchorPane.bottomAnchor="10.399999999999977" AnchorPane.rightAnchor="12.200000000000045" />
+                <ImageView fitHeight="75.0" fitWidth="67.0" layoutX="432.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.411248779296898" AnchorPane.leftAnchor="432.0" AnchorPane.topAnchor="427.0">
+                    <image>
+                        <Image url="@../../../imges/прикол4.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="71.0" fitWidth="92.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="522.7542007446289">
+                    <image>
+                        <Image url="@../../../imges/прикол2.png" />
+                    </image>
+
+                </ImageView>
+                <TableView fx:id="tableView" layoutX="21.0" layoutY="-60.0" prefHeight="450.0" prefWidth="560.0" stylesheets="@style1.css" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.600000000000023" AnchorPane.topAnchor="-60.0">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" prefWidth="171.20000457763672" text="Название" />
+                        <TableColumn fx:id="categoryColumn" prefWidth="132.3999786376953" text="Категория" />
+                        <TableColumn fx:id="quantityColumn" prefWidth="77.39996337890625" text="Количество" />
+                        <TableColumn fx:id="deliveryColumn" prefWidth="44.79998779296875" text="цена" />
+                        <TableColumn fx:id="priceColumn" prefWidth="127.19998168945312" text="общая стоимость" />
+                    </columns>
+                </TableView>
+            <Button layoutX="39.0" layoutY="464.0" mnemonicParsing="false" onAction="#PlaceOrder" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: fea580;" text="Оформить заказ" textFill="WHITE" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="12.0" />
+            <Label fx:id="SumPrice" layoutX="64.0" layoutY="427.0" textFill="#0c6627">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="70.0" prefWidth="595.0" BorderPane.alignment="CENTER" />
+    </top>
+</BorderPane>

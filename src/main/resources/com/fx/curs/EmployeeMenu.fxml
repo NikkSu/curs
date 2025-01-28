@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #001a27;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.curs.EmployeeMenuContr">
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="623.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="507.0" layoutY="294.0" mnemonicParsing="false" onAction="#GoToAfterLogin" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #4a778a;" text="назад" textFill="WHITE" AnchorPane.bottomAnchor="15.600000000000023" AnchorPane.rightAnchor="15.0" />
+                <ImageView fitHeight="75.0" fitWidth="67.0" layoutX="14.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="264.0">
+                    <image>
+                        <Image url="@../../../imges/прикол3.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="71.0" fitWidth="92.0" layoutX="520.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="-10.0">
+                    <image>
+                        <Image url="@../../../imges/прикол1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="297.0" fitWidth="297.0" layoutX="152.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../imges/логокурсач.png" />
+                    </image>
+                </ImageView>
+            <Label layoutX="216.0" text="Employee menu" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#GoToEmployeeCatalog" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="каталог" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="466.0" AnchorPane.topAnchor="15.0" />
+                <Button layoutX="466.0" layoutY="15.0" mnemonicParsing="false" onAction="#GoToEmployeeOrder" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="заказы" textFill="WHITE" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="15.0" />
+            <Button layoutX="236.0" layoutY="18.0" mnemonicParsing="false" onAction="#GoToDelivery" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="принять доставку" textFill="WHITE" AnchorPane.topAnchor="15.0" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>

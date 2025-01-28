@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #001a27;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.curs.RegistrContr">
+
+    <left>
+        <AnchorPane prefHeight="440.0" prefWidth="247.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="253.0" fitWidth="256.0" layoutX="-3.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="169.8" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-2.8000000000000114" AnchorPane.topAnchor="14.0">
+                    <image>
+                        <Image url="@../../../imges/логокурсач.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="116.0" fitWidth="93.0" layoutX="55.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../imges/прикол3.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="384.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="31.0" layoutY="191.0" text="username:" textFill="#4a778a">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="31.0" layoutY="258.0" text="password:" textFill="#4a778a">
+                    <font>
+                        <Font name="Comic Sans MS Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField id="u" fx:id="username" layoutX="144.0" layoutY="194.0" promptText="USERNAME" />
+                <ImageView fitHeight="100.0" fitWidth="97.0" layoutX="231.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../imges/прикол4.png" />
+                    </image>
+                </ImageView>
+                <Button id="l" fx:id="login" layoutX="119.0" layoutY="335.0" mnemonicParsing="false" onAction="#userlogin" style="-fx-background-color: #4a778a;" text="Log In" textFill="WHITE" />
+                <Button id="r" fx:id="reg" layoutX="189.0" layoutY="335.0" mnemonicParsing="false" onAction="#usereg" style="-fx-background-color: #4a778a;" text="Register" textFill="WHITE" />
+                <ImageView fitHeight="140.0" fitWidth="153.0" layoutX="107.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../imges/замочек(откр).png" />
+                    </image>
+                </ImageView>
+                <PasswordField fx:id="password" layoutX="144.0" layoutY="259.0" promptText="PASSWORD" />
+            <Label layoutX="108.0" layoutY="300.0" text="Уже есть аккаунт?" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="94.0" text="Registration" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font></Label>
+                <ImageView fitHeight="115.0" fitWidth="136.0" layoutX="209.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../imges/прикол1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="111.0" fitWidth="119.0" layoutX="-30.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../imges/прикол2.png" />
+                    </image>
+                </ImageView>
+                <Label id="wrn" fx:id="wrongLogIn" alignment="TOP_CENTER" layoutX="66.0" layoutY="125.0" prefHeight="52.0" prefWidth="246.0" textAlignment="CENTER" textFill="#bc5f64">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

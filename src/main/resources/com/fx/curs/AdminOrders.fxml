@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #001a27;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fx.curs.AdminOrdersContr">
+    <center>
+        <AnchorPane prefHeight="633.0" prefWidth="668.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="499.0" layoutY="480.0" mnemonicParsing="false" onAction="#GoToAdminMenu" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #4a778a;" text="назад" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="5.0" />
+                <ImageView fitHeight="75.0" fitWidth="67.0" layoutX="432.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.411248779296898" AnchorPane.leftAnchor="432.0" AnchorPane.topAnchor="427.0">
+                    <image>
+                        <Image url="@../../../imges/прикол4.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="71.0" fitWidth="92.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="522.7542007446289">
+                    <image>
+                        <Image url="@../../../imges/прикол2.png" />
+                    </image>
+
+                </ImageView>
+                <Label fx:id="alert" alignment="CENTER" layoutX="158.0" layoutY="441.0" prefHeight="42.0" prefWidth="310.0" textFill="WHITE">
+                    <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                    </font></Label>
+                <Label fx:id="sumPriceLabel" layoutX="39.0" layoutY="441.0" prefHeight="18.0" prefWidth="109.0" textFill="#0c6627" />
+                <TableView fx:id="ordersTableView" layoutX="8.0" layoutY="21.0" prefHeight="431.0" prefWidth="588.0" stylesheets="@style1.css" AnchorPane.topAnchor="21.0">
+                    <columns>
+                        <TableColumn fx:id="orderIdColumn" prefWidth="90.0" text="Номер заказа" />
+                        <TableColumn fx:id="orderDateColumn" text="Дата заказа" />
+                        <TableColumn fx:id="itemCountColumn" prefWidth="140.0" text="Количество товаров" />
+                        <TableColumn fx:id="totalPriceColumn" prefWidth="120.0" text="Общая стоимость" />
+                        <TableColumn fx:id="statusColumn" prefWidth="160.0" text="Статус" />
+                    </columns>
+                </TableView>
+            <Button layoutX="17.0" layoutY="463.0" mnemonicParsing="false" onAction="#GoToAdminOrders" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: fea580;" text="заказы " textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="5.0" />
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="70.0" prefWidth="595.0" BorderPane.alignment="CENTER">
+         <children>
+                <Button layoutX="18.0" layoutY="20.0" mnemonicParsing="false" onAction="#GoToCatalog" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="каталог" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="10.0" />
+                <Button layoutX="471.0" layoutY="10.0" mnemonicParsing="false" onAction="#GoToAccounts" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="аккаунты" textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
+                <Button layoutX="475.0" layoutY="56.0" mnemonicParsing="false" onAction="#GoToOrders" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="заказать " textFill="WHITE" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="54.0" />
+                <Button layoutX="8.0" layoutY="60.0" mnemonicParsing="false" onAction="#GoToRedactor" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #4a778a;" text="редактор каталога" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="54.0" />
+         </children></AnchorPane>
+    </top>
+</BorderPane>

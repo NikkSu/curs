@@ -1,4 +1,4 @@
-очень криво написанное приложение на javaFX, для работы должжны быть установлены:
+The application on javaFX must be installed in order to work:
 jdk - 23
 sdk - 23
-так-же изменить параметры в databaseconfig на параметры вашей db и само собой экспортировать sql данные. 
+also change the parameters in databaseconfig to your db parameters and export sql data itself. 
